@@ -1,0 +1,298 @@
+Instrucciones mías:
+Quiero que siempre tengas en la mente que quiero realizar el proyecto aquí en local de visualstudiocode en una jupyter notebook pero que debes de tener en mente que todo lo que hagamos deberá de ser compatible con Google Colab, por ejemplo el importar la base de datos al notebook, no es posible que la tengamos en el mismo entorno porque no subiré los archivos en conjunto solamente el ipynb.
+Además tienes que trabajar con la estructura que ya se nos plantea en el @TelecomX_LATAM.ipynb. Tienes que analizar las siguientes instrucciones generales, despúes ir haciendo sección por sección de lo que solicitan.
+Otro punto importante es que necesito tener un control de versiones en GitHub, para lo cual planeo que hagamos avances de un punto x a un punto y para subirlo y despúes avanzar de nuevo con el mismo método.
+
+Instrucciones del proyecto desde aquí:
+/
+
+Introducción al Desafío Telecom X
+
+El desafío Telecom X ofrece una oportunidad única para aplicar habilidades esenciales de análisis de datos en un escenario de negocios real.
+
+Aplicación práctica del conocimiento
+La limpieza y tratamiento de datos es una habilidad fundamental para cualquier analista de datos. La manipulación de grandes volúmenes de información exige la capacidad de identificar y corregir inconsistencias en los datos, como valores nulos, duplicados y datos fuera de estándar. Garantizar que los datos estén listos para el análisis es un paso esencial para obtener resultados precisos y confiables.
+
+El análisis exploratorio de datos (EDA) es una etapa crucial para comprender en profundidad los datos. La capacidad de aplicar estadísticas descriptivas y generar visualizaciones permite identificar patrones, tendencias y relaciones entre las variables. Esto ayuda a formular hipótesis y generar insights que pueden influir en decisiones estratégicas dentro de la empresa.
+
+Al participar en este desafío, aplicarás conocimientos esenciales para el análisis de grandes volúmenes de datos en un contexto real, donde tus hallazgos podrán impactar directamente en las estrategias de la empresa para mejorar el principal problema que están enfrentando.
+
+Este desafío no solo contribuye a tu crecimiento en el área de Data Science, sino que también ofrece la oportunidad de entender cómo la ciencia de datos puede aplicarse para resolver problemas reales que enfrentan las empresas en el mercado.
+
+/
+
+Enfoque en el Proceso de ETL
+El principal objetivo de este desafío es desarrollar tus habilidades en ETL (Extract, Transform, Load) con Python. Los datos para este desafío están disponibles en una API.
+
+Accede a los datos de la API
+TelecomX Datos
+En este desafío, el enfoque está en el proceso de extracción de datos desde la API, limpieza y transformación. Después de esta etapa de procesamiento, deberás organizar los datos de manera que permitan análisis más profundos y visualizaciones.
+
+Como apoyo adicional, hemos creado un cuaderno base opcional para ayudarte a estructurar mejor el desafío. Este cuaderno proporciona una base inicial, sugiriendo un flujo de trabajo organizado y buenas prácticas para el proceso de ETL. Puedes usarlo como guía durante la ejecución del desafío, pero también tienes la opción de no utilizarlo y estructurar la solución por tu cuenta.
+
+Accede al cuaderno base (opcional)
+Cuaderno Base - Telecom X
+Al completar este desafío, habrás aplicado competencias esenciales en ETL, fundamentales para el trabajo de un analista de datos y otras áreas dentro de Data Science.
+
+/
+
+Indicaciones
+
+/
+
+💡Acerca del desafío 💡
+Descripción
+Telecom X - Análisis de Evasión de Clientes
+Has sido contratado como asistente de análisis de datos en Telecom X y formarás parte del proyecto "Churn de Clientes". La empresa enfrenta una alta tasa de cancelaciones y necesita comprender los factores que llevan a la pérdida de clientes.
+
+Tu desafío será recopilar, procesar y analizar los datos, utilizando Python y sus principales bibliotecas para extraer información valiosa. A partir de tu análisis, el equipo de Data Science podrá avanzar en modelos predictivos y desarrollar estrategias para reducir la evasión.
+
+¿Qué vas a practicar?
+✅ Importar y manipular datos desde una API de manera eficiente.
+✅ Aplicar los conceptos de ETL (Extracción, Transformación y Carga) en la preparación de los datos.
+✅ Crear visualizaciones estratégicas para identificar patrones y tendencias.
+✅ Realizar un Análisis Exploratorio de Datos (EDA) y generar un informe con insights relevantes.
+
+¡Ahora es tu turno! 🚀 Usa tus conocimientos para transformar datos en información estratégica y ayudar a Telecom X a retener más clientes.
+
+/
+
+Crear el repositorio de tu proyecto en GitHub
+
+Descripción
+
+A la hora de desarrollar proyectos, sabemos lo esencial que es organizar el trabajo desde el principio. Por lo tanto, en este desafío, tendrás que crear un repositorio en GitHub para almacenar y versionar tu proyecto.
+
+Incluso si aún no has desarrollado ningún código, el objetivo es crear una estructura inicial para el proyecto. A medida que avances, podrás actualizar y agregar archivos al repositorio.
+
+Materiales de apoyo
+Si necesita ayuda, consulte los siguientes recursos:
+
+Git - Acerca del Control de Versiones
+Iniciando un repositorio con Git | Alura Cursos Online
+
+¡Organizar tu proyecto desde el principio facilita el desarrollo y garantiza buenas prácticas en el control de versiones! 🚀
+
+/
+
+📌 Extracción(E - Extract)
+
+/
+
+Extracción de datos
+
+Descripción
+
+Para iniciar tu análisis, necesitarás importar los datos de la API de Telecom X. Estos datos están disponibles en formato JSON y contienen información esencial sobre los clientes, incluyendo datos demográficos, tipo de servicio contratado y estado de evasión.
+
+📌 Enlace de la API:
+🔗 challenge2-data-science-LATAM/TelecomX_Data.json at main · ingridcristh/challenge2-data-science-LATAM
+
+🔗GitHub - ingridcristh/challenge2-data-science-LATAM
+
+¿Qué debes hacer?
+✅ Cargar los datos directamente desde la API utilizando Python.
+✅ Convertir los datos a un DataFrame de Pandas para facilitar su manipulación.
+
+Este es el primer paso para transformar los datos en información valiosa. ¿Listo para programar? 🚀
+
+/
+
+🔧 Transformación (T - Transform)
+
+/
+
+Conoce el conjunto de datos
+
+Descripción
+
+Ahora que has extraído los datos, es fundamental comprender la estructura del dataset y el significado de sus columnas. Esta etapa te ayudará a identificar qué variables son más relevantes para el análisis de evasión de clientes.
+
+📌 Para facilitar este proceso, hemos creado un diccionario de datos con la descripción de cada columna. Aunque no es obligatorio utilizarlo, puede ayudarte a comprender mejor la información disponible.
+
+🔗 Enlace al diccionario y a la API
+
+¿Qué debes hacer?
+✅ Explorar las columnas del dataset y verificar sus tipos de datos.
+✅ Consultar el diccionario para comprender mejor el significado de las variables.
+✅ Identificar las columnas más relevantes para el análisis de evasión.
+
+📌 Tips:
+🔗 Documentación de DataFrame.info()
+🔗 Documentación de DataFrame.dtypes
+
+/
+
+Comprobación de incoherencias en los datos
+
+Descripción
+
+En este paso, verifica si hay problemas en los datos que puedan afectar el análisis. Presta atención a valores ausentes, duplicados, errores de formato e inconsistencias en las categorías. Este proceso es esencial para asegurarte de que los datos estén listos para las siguientes etapas.
+
+📌 Tips:
+
+🔗 Documentación de pandas.unique()
+🔗 Documentación de pandas.Series.dt.normalize()
+
+/
+
+Manejo de inconsistencias
+
+Descripción
+
+Ahora que has identificado las inconsistencias, es momento de aplicar las correcciones necesarias. Ajusta los datos para asegurarte de que estén completos y coherentes, preparándolos para las siguientes etapas del análisis.
+
+📌 Tips:
+
+🔗 Manipulación de strings en pandas: lower, replace, startswith y contains | Alura Cursos Online
+
+/
+
+Columna de cuentas diarias
+
+Descripción
+
+Ahora que los datos están limpios, es momento de crear la columna "Cuentas_Diarias". Utiliza la facturación mensual para calcular el valor diario, proporcionando una visión más detallada del comportamiento de los clientes a lo largo del tiempo.
+
+📌 Esta columna te ayudará a profundizar en el análisis y a obtener información valiosa para las siguientes etapas.
+
+/
+
+Estandarización y transformación de datos (opcional)
+
+Descripción
+
+La estandarización y transformación de datos es una etapa opcional, pero altamente recomendada, ya que busca hacer que la información sea más consistente, comprensible y adecuada para el análisis. Durante esta fase, por ejemplo, puedes convertir valores textuales como "Sí" y "No" en valores binarios (1 y 0), lo que facilita el procesamiento matemático y la aplicación de modelos analíticos.
+
+Además, traducir o renombrar columnas y datos hace que la información sea más accesible y fácil de entender, especialmente cuando se trabaja con fuentes externas o términos técnicos. Aunque no es un paso obligatorio, puede mejorar significativamente la claridad y comunicación de los resultados, facilitando la interpretación y evitando confusiones, especialmente al compartir información con stakeholders no técnicos.
+
+/
+
+📊 Carga y análisis(L - Load & Analysis)
+
+/
+
+Análisis Descriptivo
+
+Descripción
+
+Para comenzar, realiza un análisis descriptivo de los datos, calculando métricas como media, mediana, desviación estándar y otras medidas que ayuden a comprender mejor la distribución y el comportamiento de los clientes.
+
+📌 Consejos:
+
+🔗 Documentación de DataFrame.describe()
+
+/
+
+Distribución de evasión
+
+Descripción
+
+En este paso, el objetivo es comprender cómo está distribuida la variable "churn" (evasión) entre los clientes. Utiliza gráficos para visualizar la proporción de clientes que permanecieron y los que se dieron de baja.
+
+/
+
+Recuento de evasión por variables categóricas
+
+Descripción
+
+Ahora, exploraremos cómo se distribuye la evasión según variables categóricas, como género, tipo de contrato, método de pago, entre otras.
+
+Este análisis puede revelar patrones interesantes, por ejemplo, si los clientes de ciertos perfiles tienen una mayor tendencia a cancelar el servicio, lo que ayudará a orientar acciones estratégicas.
+
+/
+
+Conteo de evasión por variables numéricas
+
+Descripción
+
+En este paso, explora cómo las variables numéricas, como "total gastado" o "tiempo de contrato", se distribuyen entre los clientes que cancelaron (evasión) y los que no cancelaron.
+
+Este análisis ayuda a entender si ciertos valores numéricos están más asociados con la evasión, proporcionando insights sobre los factores que influyen en el comportamiento de los clientes.
+
+/
+
+Informe final
+
+Descripción
+
+Finaliza el desafío elaborando un informe dentro del mismo notebook que resuma todo el trabajo realizado. El informe debe incluir:
+
+🔹 Introducción: Explica el objetivo del análisis y el problema de evasión de clientes (Churn).
+
+🔹 Limpieza y Tratamiento de Datos: Describe los pasos realizados para importar, limpiar y procesar los datos.
+
+🔹 Análisis Exploratorio de Datos: Presenta los análisis realizados, incluyendo gráficos y visualizaciones para identificar patrones.
+
+🔹 Conclusiones e Insights: Resume los principales hallazgos y cómo estos datos pueden ayudar a reducir la evasión.
+
+🔹 Recomendaciones: Ofrece sugerencias estratégicas basadas en tu análisis.
+
+Asegúrate de que el informe esté bien estructurado, claro y respaldado por visualizaciones que refuercen tus conclusiones. 🚀
+
+/
+
+¡EXTRA!
+
+/
+
+¡Extra! Análisis de correlación entre variables
+
+Descripción
+
+Esta actividad es un extra, por lo tanto es OPCIONAL.
+
+Como un paso adicional, puedes explorar la correlación entre diferentes variables del dataset. Esto puede ayudar a identificar qué factores tienen mayor relación con la evasión de clientes, como:
+
+🔹 La relación entre la cuenta diaria y la evasión.
+🔹 Cómo la cantidad de servicios contratados afecta la probabilidad de churn.
+
+Puedes usar la función corr() de Pandas para calcular las correlaciones y visualizar los resultados con gráficos de dispersión o matrices de correlación.
+
+Este análisis adicional puede proporcionar insights valiosos para la creación de modelos predictivos más robustos. 🚀
+
+/
+
+¡Entrega del Desafio!
+
+/
+
+📖 README 📖
+
+Descripción
+
+El README es un elemento clave en cualquier proyecto de desarrollo, ya que proporciona una descripción clara y detallada del propósito, la estructura y el uso del código.
+
+Cuando participas en un proceso de selección, el README es imprescindible para comunicar cómo utilizar el proyecto.
+
+Este archivo, con la extensión .md (Markdown), es el punto de referencia inicial para cualquiera que quiera entender y trabajar con su código.
+
+Un buen README incluye información sobre la instalación, dependencias, cómo ejecutar el proyecto y posibles problemas o soluciones.
+
+Un README bien estructurado facilita que otros desarrolladores comprendan el proyecto.
+
+Aquí hay un artículo con los pasos para crear un README increíble:
+
+/
+
+Entrega del desafío
+
+Etiquetas
+Git/GitHub
+Entrega del Proyecto
+
+Descripción
+
+Para enviar formalmente su desafío, debe seguir los pasos que se enumeran en la lista de verificación a continuación.
+
+Checklist
+Eliminar
+0%
+Sube el proyecto y el README a GitHub
+
+Realizar la entrega a través del curso “__”
+
+Publica tu proyecto y/o un vídeo en Linkedin
+
+
+
