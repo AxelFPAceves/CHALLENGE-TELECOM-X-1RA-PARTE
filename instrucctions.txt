@@ -2,7 +2,7 @@ Instrucciones mías:
 Quiero que siempre tengas en la mente que quiero realizar el proyecto aquí en local de visualstudiocode en una jupyter notebook pero que debes de tener en mente que todo lo que hagamos deberá de ser compatible con Google Colab, por ejemplo el importar la base de datos al notebook, no es posible que la tengamos en el mismo entorno porque no subiré los archivos en conjunto solamente el ipynb.
 Además tienes que trabajar con la estructura que ya se nos plantea en el @TelecomX_LATAM.ipynb. Tienes que analizar las siguientes instrucciones generales, despúes ir haciendo sección por sección de lo que solicitan.
 Otro punto importante es que necesito tener un control de versiones en GitHub, para lo cual planeo que hagamos avances de un punto x a un punto y para subirlo y despúes avanzar de nuevo con el mismo método.
-
+Cuando detectes algo escrito entre "& aqui &" significa que es mi comentario en medio de las instrucciones, así indicaré que ya hice o notas necesarias que surgan mientras trabajamos.
 Instrucciones del proyecto desde aquí:
 /
 
@@ -73,6 +73,7 @@ Iniciando un repositorio con Git | Alura Cursos Online
 
 ¡Organizar tu proyecto desde el principio facilita el desarrollo y garantiza buenas prácticas en el control de versiones! 🚀
 
+& ya hice esto y ya está sincronizado git hub en vsc &
 /
 
 📌 Extracción(E - Extract)
@@ -86,9 +87,9 @@ Descripción
 Para iniciar tu análisis, necesitarás importar los datos de la API de Telecom X. Estos datos están disponibles en formato JSON y contienen información esencial sobre los clientes, incluyendo datos demográficos, tipo de servicio contratado y estado de evasión.
 
 📌 Enlace de la API:
-🔗 challenge2-data-science-LATAM/TelecomX_Data.json at main · ingridcristh/challenge2-data-science-LATAM
+🔗 challenge2-data-science-LATAM/TelecomX_Data.json at main · ingridcristh/challenge2-data-science-LATAM: https://github.com/ingridcristh/challenge2-data-science-LATAM/blob/main/TelecomX_Data.json
 
-🔗GitHub - ingridcristh/challenge2-data-science-LATAM
+🔗GitHub - ingridcristh/challenge2-data-science-LATAM: https://github.com/ingridcristh/challenge2-data-science-LATAM
 
 ¿Qué debes hacer?
 ✅ Cargar los datos directamente desde la API utilizando Python.
@@ -96,7 +97,9 @@ Para iniciar tu análisis, necesitarás importar los datos de la API de Telecom 
 
 Este es el primer paso para transformar los datos en información valiosa. ¿Listo para programar? 🚀
 
+& realizado en notebook &
 /
+
 
 🔧 Transformación (T - Transform)
 
