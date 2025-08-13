@@ -123,6 +123,7 @@ Ahora que has extraído los datos, es fundamental comprender la estructura del d
 📌 Tips:
 🔗 Documentación de DataFrame.info()
 🔗 Documentación de DataFrame.dtypes
+& realizado en notebook &
 
 /
 
