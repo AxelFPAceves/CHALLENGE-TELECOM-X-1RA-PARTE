@@ -97,7 +97,7 @@ Para iniciar tu análisis, necesitarás importar los datos de la API de Telecom 
 
 Este es el primer paso para transformar los datos en información valiosa. ¿Listo para programar? 🚀
 
-& realizado en notebook &
+& terminado &
 /
 
 
@@ -123,7 +123,7 @@ Ahora que has extraído los datos, es fundamental comprender la estructura del d
 📌 Tips:
 🔗 Documentación de DataFrame.info()
 🔗 Documentación de DataFrame.dtypes
-& realizado en notebook &
+& terminado &
 
 /
 
@@ -137,6 +137,7 @@ En este paso, verifica si hay problemas en los datos que puedan afectar el anál
 
 🔗 Documentación de pandas.unique()
 🔗 Documentación de pandas.Series.dt.normalize()
+& terminado &
 
 /
 
@@ -149,6 +150,7 @@ Ahora que has identificado las inconsistencias, es momento de aplicar las correc
 📌 Tips:
 
 🔗 Manipulación de strings en pandas: lower, replace, startswith y contains | Alura Cursos Online
+& terminado &
 
 /
 
@@ -159,6 +161,7 @@ Descripción
 Ahora que los datos están limpios, es momento de crear la columna "Cuentas_Diarias". Utiliza la facturación mensual para calcular el valor diario, proporcionando una visión más detallada del comportamiento de los clientes a lo largo del tiempo.
 
 📌 Esta columna te ayudará a profundizar en el análisis y a obtener información valiosa para las siguientes etapas.
+& terminado &
 
 /
 
@@ -169,6 +172,7 @@ Descripción
 La estandarización y transformación de datos es una etapa opcional, pero altamente recomendada, ya que busca hacer que la información sea más consistente, comprensible y adecuada para el análisis. Durante esta fase, por ejemplo, puedes convertir valores textuales como "Sí" y "No" en valores binarios (1 y 0), lo que facilita el procesamiento matemático y la aplicación de modelos analíticos.
 
 Además, traducir o renombrar columnas y datos hace que la información sea más accesible y fácil de entender, especialmente cuando se trabaja con fuentes externas o términos técnicos. Aunque no es un paso obligatorio, puede mejorar significativamente la claridad y comunicación de los resultados, facilitando la interpretación y evitando confusiones, especialmente al compartir información con stakeholders no técnicos.
+& terminado &
 
 /
 
@@ -185,6 +189,7 @@ Para comenzar, realiza un análisis descriptivo de los datos, calculando métric
 📌 Consejos:
 
 🔗 Documentación de DataFrame.describe()
+& terminado &
 
 /
 
@@ -193,6 +198,7 @@ Distribución de evasión
 Descripción
 
 En este paso, el objetivo es comprender cómo está distribuida la variable "churn" (evasión) entre los clientes. Utiliza gráficos para visualizar la proporción de clientes que permanecieron y los que se dieron de baja.
+& terminado &
 
 /
 
@@ -203,6 +209,7 @@ Descripción
 Ahora, exploraremos cómo se distribuye la evasión según variables categóricas, como género, tipo de contrato, método de pago, entre otras.
 
 Este análisis puede revelar patrones interesantes, por ejemplo, si los clientes de ciertos perfiles tienen una mayor tendencia a cancelar el servicio, lo que ayudará a orientar acciones estratégicas.
+& terminado &
 
 /
 
@@ -213,6 +220,7 @@ Descripción
 En este paso, explora cómo las variables numéricas, como "total gastado" o "tiempo de contrato", se distribuyen entre los clientes que cancelaron (evasión) y los que no cancelaron.
 
 Este análisis ayuda a entender si ciertos valores numéricos están más asociados con la evasión, proporcionando insights sobre los factores que influyen en el comportamiento de los clientes.
+& terminado &
 
 /
 
@@ -297,6 +305,3 @@ Sube el proyecto y el README a GitHub
 Realizar la entrega a través del curso “__”
 
 Publica tu proyecto y/o un vídeo en Linkedin
-
-
-
